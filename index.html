@@ -5392,7 +5392,7 @@ strip?.addEventListener('click',e=>{
 (() => {
   let saved = null;
   function preparePDF(){
-    if(saved) return;
+    if(saved){window.fitPDFSlides();return;}
     const slides=[...document.querySelectorAll('.chapter')];
     saved={expo:document.body.classList.contains('expo-mode'),scroll:scrollY,targets:slides.map(s=>{const t=s.querySelector(':scope>.section-inner,:scope>.hero-content,:scope>.closing-content');return {slide:s,target:t,style:t?.getAttribute('style'),dense:s.classList.contains('expo-dense')};})};
     document.body.classList.add('expo-mode','pdf-mode');
@@ -5401,10 +5401,19 @@ strip?.addEventListener('click',e=>{
     document.querySelectorAll('.chapter img').forEach(n=>n.loading='eager');
     void document.body.offsetHeight;
     window.fitPDFSlides();
+    // Freeze the layout before the browser switches to its printer viewport.
+    // This prevents responsive grids from stacking after pagination is measured.
+    const properties=['display','width','height','min-width','max-width','min-height','max-height','grid-template-columns','grid-template-rows','grid-auto-flow','column-gap','row-gap','flex-direction','flex-wrap','font-size','line-height','padding-top','padding-right','padding-bottom','padding-left'];
+    const targets=new Set(saved.targets.map(t=>t.target));
+    const frozen=[...document.querySelectorAll('.chapter *')].filter(n=>!targets.has(n)).map(n=>{const cs=getComputedStyle(n);return {element:n,style:n.getAttribute('style'),values:properties.map(key=>[key,cs.getPropertyValue(key)])};});
+    saved.frozen=frozen;
+    frozen.forEach(({element,values})=>values.forEach(([key,value])=>element.style.setProperty(key,value,'important')));
+    window.fitPDFSlides();
   }
   function restorePDF(){
     if(!saved) return;
     const previous=saved;saved=null;
+    previous.frozen?.forEach(({element,style})=>{if(style===null)element.removeAttribute('style');else element.setAttribute('style',style);});
     document.body.classList.remove('pdf-mode');
     document.body.classList.toggle('expo-mode',previous.expo);
     previous.targets.forEach(({slide,target,style,dense})=>{slide.classList.toggle('expo-dense',dense);if(target){if(style===null)target.removeAttribute('style');else target.setAttribute('style',style);}});
