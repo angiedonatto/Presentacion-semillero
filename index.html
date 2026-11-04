@@ -4037,6 +4037,27 @@ button:focus-visible,[role=slider]:focus-visible{outline:3px solid var(--terraco
 #metrics .academic-engine{white-space:nowrap}
 #errors .stack-row{grid-template-columns:150px minmax(0,1fr)!important;column-gap:24px!important}
 @media(max-width:700px){.number-row{column-gap:16px!important;row-gap:12px!important}.number-row>span{font-size:20px!important}.number-row>b{font-size:26px!important}.extreme-row{grid-template-columns:minmax(0,1fr) max-content!important;gap:12px 18px!important}.extreme-row>b{grid-column:1;grid-row:1;font-size:19px!important}.extreme-row>strong{grid-column:2;grid-row:1}.extreme-track{grid-column:1/-1;grid-row:2}#metrics .academic-metric-row{grid-template-columns:92px minmax(0,1fr) 90px!important;gap:12px!important}#errors .stack-row{grid-template-columns:1fr!important}}
+</style><style id="complete-pdf-export">
+/* Stable landscape pagination; the complete deck is 22 pages. */
+@page{size:1440px 810px;margin:0}
+body.pdf-mode{width:1440px!important;--expo-safe-top:40px!important;--expo-safe-bottom:40px!important;--expo-safe-side:64px!important}
+body.pdf-mode .chapter{width:1440px!important;height:810px!important;min-height:810px!important;max-height:810px!important;break-inside:avoid!important;break-after:page!important;page-break-after:always!important;content-visibility:visible!important}
+body.pdf-mode .chapter:last-child{break-after:auto!important;page-break-after:auto!important}
+body.pdf-mode .reveal,body.pdf-mode .reveal-left,body.pdf-mode .reveal-right{opacity:1!important;transition:none!important}
+body.pdf-mode .chapter> .section-inner,body.pdf-mode .chapter>.hero-content,body.pdf-mode .chapter>.closing-content{visibility:visible!important}
+body.pdf-mode .presentation-chrome,body.pdf-mode .chapter-rail,body.pdf-mode .nav-controls,body.pdf-mode .top-progress,body.pdf-mode .grain,body.pdf-mode .cursor-lens,body.pdf-mode #introCurtain{display:none!important}
+body.pdf-mode .source-evidence{display:none!important}
+body.pdf-mode *,body.pdf-mode *::before,body.pdf-mode *::after{animation:none!important;transition:none!important;caret-color:transparent!important}
+body.pdf-mode .chapter:after{left:auto!important;top:auto!important;width:auto!important;height:auto!important;background:none!important;content:attr(data-pdf-page);position:absolute;right:30px;bottom:18px;z-index:10;font:16px Arial,sans-serif;color:inherit;opacity:.8}
+@media print{
+html{width:1440px!important;scroll-snap-type:none!important;scroll-behavior:auto!important;background:#fff!important}
+body{margin:0!important;-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+body.pdf-mode #deck{display:block!important;width:1440px!important;margin:0!important;padding:0!important;overflow:clip!important}
+body.pdf-mode .chapter{contain:strict!important;overflow:clip!important}
+html,body{overflow:clip!important}
+a{text-decoration:none!important}
+}
+@media(max-width:600px){.chrome-actions{flex-wrap:wrap;justify-content:flex-end}.chrome-actions #savePdfBtn{font-size:12px;padding:8px 10px}}
 </style></head>
 <body class="">
 <div aria-hidden="true" class="intro-curtain done" id="introCurtain">
@@ -4056,6 +4077,7 @@ button:focus-visible,[role=slider]:focus-visible{outline:3px solid var(--terraco
 <span class="brand-sub">archivo · reconocimiento · evidencia</span>
 </button>
 <div class="chrome-actions">
+<button class="ghost-btn" id="savePdfBtn" type="button" title="Guardar las 22 diapositivas como PDF">Guardar PDF</button>
 <button aria-pressed="false" class="ghost-btn" id="motionToggle" title="Pausar animaciones">Pausar movimiento</button>
 <button class="solid-btn" id="fullscreenBtn">Modo exposición</button>
 </div>
@@ -4735,7 +4757,7 @@ button:focus-visible,[role=slider]:focus-visible{outline:3px solid var(--terraco
 <header class="section-head reveal">
 <p class="eyebrow">ICR · entidades</p>
 <h2>Nombres: 69,5 % · números: 26,5 %</h2>
-</header><figure class="projector-chart"><figcaption>Entidades preservadas · OlmOCR</figcaption><div class="projection-row"><span>Nombres</span><div class="projection-track"><i style="width:69.5%"></i></div><b>69,5 %</b></div><div class="projection-row"><span>Códigos</span><div class="projection-track"><i style="width:57.1%"></i></div><b>57,1 %</b></div><div class="projection-row"><span>Fechas</span><div class="projection-track"><i style="width:56.8%"></i></div><b>56,8 %</b></div><div class="projection-row focus-row"><span>Números</span><div class="projection-track"><i style="width:26.5%"></i></div><b>26,5 %</b></div><div class="projection-axis">0 % <span>Proporción preservada por categoría</span> 100 %</div><div class="evidence-strip"><span>Nombres <b>169/243</b></span><span>Números <b>9/34</b></span></div></figure>
+</header><figure class="projector-chart"><figcaption>Entidades preservadas · OlmOCR</figcaption><div class="projection-row"><span>Nombres</span><div class="projection-track"><i style="width:69.5%"></i></div><b>69,5 %</b></div><div class="projection-row"><span>Códigos</span><div class="projection-track"><i style="width:57.1%"></i></div><b>57,1 %</b></div><div class="projection-row"><span>Fechas</span><div class="projection-track"><i style="width:56.8%"></i></div><b>56,8 %</b></div><div class="projection-row focus-row"><span>Números</span><div class="projection-track"><i style="width:26.5%"></i></div><b>26,5 %</b></div><div class="projection-axis">0 % <span>Proporción preservada por categoría</span> 100 %</div><div class="evidence-strip"><span>Nombres <b>169/243</b></span><span>Números <b>9/34</b></span></div><p class="evidence-caution">22 de los 34 números eran ordinales. Al excluirlos, la preservación numérica sería 66,7 %.</p></figure>
 <details class="source-evidence"><summary>Respaldo metodológico</summary><div class="report-figure-card entity-report-card reveal delay-1">
 <img alt="Figura del reporte ICR con preservación de fechas, números, nombres propios y códigos administrativos" decoding="async" loading="lazy" src="https://ocr-icr-documentos.vercel.app/assets/image-23-bba47b4b2db8.png"/>
 </div><div class="entity-report-notes reveal delay-2">
@@ -5270,8 +5292,9 @@ strip?.addEventListener('click',e=>{
     const target = expoTarget(section);
     if(!target) return;
 
-    const vw = window.innerWidth;
-    const vh = window.innerHeight;
+    const pdf = document.body.classList.contains('pdf-mode');
+    const vw = pdf ? 1440 : window.innerWidth;
+    const vh = pdf ? 810 : window.innerHeight;
     const styles = getComputedStyle(document.body);
     const safeTop = parseFloat(styles.getPropertyValue('--expo-safe-top')) || 76;
     const safeBottom = parseFloat(styles.getPropertyValue('--expo-safe-bottom')) || 92;
@@ -5309,9 +5332,9 @@ strip?.addEventListener('click',e=>{
   }
 
   function fitExpoSlides(){
-    if(!document.body.classList.contains('expo-mode')) return;
+    if(!document.body.classList.contains('expo-mode') || document.body.classList.contains('pdf-mode')) return;
     // Dos RAF aseguran que fullscreen y fuentes hayan terminado de relayout.
-    requestAnimationFrame(()=>requestAnimationFrame(()=>sections.forEach(fitOne)));
+    requestAnimationFrame(()=>requestAnimationFrame(()=>{if(!document.body.classList.contains('pdf-mode'))sections.forEach(fitOne);}));
   }
 
   function setExpoMode(active){
@@ -5340,14 +5363,64 @@ strip?.addEventListener('click',e=>{
 
   // Reajusta al llegar a otra escena: algunas animaciones cambian la caja visual.
   const io = new IntersectionObserver(entries=>{
-    if(!document.body.classList.contains('expo-mode')) return;
-    entries.forEach(e=>{ if(e.isIntersecting) setTimeout(()=>fitOne(e.target),80); });
+    if(!document.body.classList.contains('expo-mode') || document.body.classList.contains('pdf-mode')) return;
+    entries.forEach(e=>{ if(e.isIntersecting) setTimeout(()=>{if(!document.body.classList.contains('pdf-mode'))fitOne(e.target);},80); });
   }, {threshold:.55});
   sections.forEach(s=>io.observe(s));
 
   // Helper público para pruebas/manual QA.
   window.fitExpoSlides = fitExpoSlides;
+  window.fitPDFSlides = () => {
+    sections.forEach(section => {
+      const target=expoTarget(section);if(!target)return;
+      target.style.setProperty('--expo-layout-width','1312px');
+      target.style.setProperty('--expo-scale','1');
+      target.style.setProperty('--expo-top','40px');
+      section.classList.remove('expo-dense');
+      void target.offsetHeight;
+      const height=Math.max(target.scrollHeight,target.getBoundingClientRect().height);
+      const scale=Math.min(1,720/height);
+      target.style.setProperty('--expo-scale',scale.toFixed(5));
+      target.style.setProperty('--expo-top',(40+(730-height*scale)/2).toFixed(2)+'px');
+    });
+  };
   window.enableExpoLayout = () => { document.body.classList.add('expo-mode'); fitExpoSlides(); };
+})();
+</script>
+
+<script id="pdf-export-script">
+(() => {
+  let saved = null;
+  function preparePDF(){
+    if(saved) return;
+    const slides=[...document.querySelectorAll('.chapter')];
+    saved={expo:document.body.classList.contains('expo-mode'),scroll:scrollY,targets:slides.map(s=>{const t=s.querySelector(':scope>.section-inner,:scope>.hero-content,:scope>.closing-content');return {slide:s,target:t,style:t?.getAttribute('style'),dense:s.classList.contains('expo-dense')};})};
+    document.body.classList.add('expo-mode','pdf-mode');
+    slides.forEach((s,i)=>{s.classList.add('is-visible');s.dataset.pdfPage=`${i+1} / ${slides.length}`;});
+    document.querySelectorAll('.count[data-count]').forEach(n=>n.textContent=n.dataset.count);
+    document.querySelectorAll('.chapter img').forEach(n=>n.loading='eager');
+    void document.body.offsetHeight;
+    window.fitPDFSlides();
+  }
+  function restorePDF(){
+    if(!saved) return;
+    const previous=saved;saved=null;
+    document.body.classList.remove('pdf-mode');
+    document.body.classList.toggle('expo-mode',previous.expo);
+    previous.targets.forEach(({slide,target,style,dense})=>{slide.classList.toggle('expo-dense',dense);if(target){if(style===null)target.removeAttribute('style');else target.setAttribute('style',style);}});
+    window.scrollTo({top:previous.scroll,behavior:'instant'});
+  }
+  window.addEventListener('beforeprint',preparePDF);
+  window.addEventListener('afterprint',restorePDF);
+  document.getElementById('savePdfBtn').addEventListener('click',async()=>{
+    const button=document.getElementById('savePdfBtn');button.disabled=true;button.textContent='Preparando PDF…';
+    try{
+      const imgs=[...document.querySelectorAll('.chapter img')];imgs.forEach(n=>n.loading='eager');
+      await document.fonts.ready;
+      await Promise.race([Promise.all(imgs.map(n=>n.decode().catch(()=>{}))),new Promise(resolve=>setTimeout(resolve,10000))]);
+      window.print();
+    } finally {button.disabled=false;button.textContent='Guardar PDF';}
+  });
 })();
 </script>
 </body></html>
