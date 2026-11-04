@@ -4025,6 +4025,18 @@ button:focus-visible,[role=slider]:focus-visible{outline:3px solid var(--terraco
 #tracks .method-center b+b:before{content:'·';margin-right:24px}
 #tracks .section-head{margin-bottom:26px!important}#tracks h2{font-size:clamp(36px,4.2vw,60px)!important}
 @media(max-width:700px){#tracks .method-stage{grid-template-columns:1fr!important}#tracks .method-card{padding:25px!important;gap:18px!important}#tracks .method-card>p{font-size:23px!important}#tracks .method-center{flex-direction:column!important;padding:20px!important}#tracks .method-center b{font-size:23px!important}#tracks .method-center b+b:before{content:none}}
+</style><style id="chart-label-spacing">
+/* Put long names above bars in narrow comparison cards. */
+.number-row{grid-template-columns:minmax(0,1fr) max-content!important;column-gap:24px!important;row-gap:14px!important}
+.number-row>span{grid-column:1;grid-row:1;white-space:nowrap;min-width:max-content}
+.number-row>b{grid-column:2;grid-row:1;white-space:nowrap;text-align:right}
+.number-row>div{grid-column:1/-1;grid-row:2;width:100%;min-width:0}
+.extreme-row{grid-template-columns:130px minmax(0,1fr) 90px!important;column-gap:24px!important}
+.extreme-row>b{white-space:nowrap}
+#metrics .academic-metric-row{grid-template-columns:150px minmax(0,1fr) 160px!important;column-gap:24px!important}
+#metrics .academic-engine{white-space:nowrap}
+#errors .stack-row{grid-template-columns:150px minmax(0,1fr)!important;column-gap:24px!important}
+@media(max-width:700px){.number-row{column-gap:16px!important;row-gap:12px!important}.number-row>span{font-size:20px!important}.number-row>b{font-size:26px!important}.extreme-row{grid-template-columns:minmax(0,1fr) max-content!important;gap:12px 18px!important}.extreme-row>b{grid-column:1;grid-row:1;font-size:19px!important}.extreme-row>strong{grid-column:2;grid-row:1}.extreme-track{grid-column:1/-1;grid-row:2}#metrics .academic-metric-row{grid-template-columns:92px minmax(0,1fr) 90px!important;gap:12px!important}#errors .stack-row{grid-template-columns:1fr!important}}
 </style></head>
 <body class="">
 <div aria-hidden="true" class="intro-curtain done" id="introCurtain">
