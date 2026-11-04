@@ -3885,6 +3885,67 @@ button:focus-visible,[role=slider]:focus-visible{outline:3px solid var(--terraco
 #cross-entities .entity-cross-row:nth-child(3){border:2px solid var(--terracotta);background:#963e2b08;padding:18px;border-radius:6px}
 @media(max-width:980px){#errors .error-layout,#stability .stability-grid{grid-template-columns:1fr!important}}
 @media(max-width:600px){#metrics .academic-metric-row{grid-template-columns:82px 1fr 75px!important;gap:8px!important;padding:16px 6px!important}#metrics .chart-value{font-size:23px}#metrics .academic-engine{font-size:12px!important}.number-row{grid-template-columns:75px 1fr 75px;gap:8px}.number-row b{font-size:17px}.extreme-chart{padding:18px}.extreme-row{grid-template-columns:75px 1fr 60px;gap:8px}}
+</style><style id="projection-spotlight">
+/* Projection composition: archival paper around a high-contrast evidence panel. */
+#errors .legend .dot.original{background:#a9b698!important}#errors .legend .dot.pre{background:#e5a47b!important}#errors .legend .dot:not(.original):not(.pre){background:#c7baab!important}
+#icr-metrics .report-stat-strip{background:#252c27!important;border-radius:10px;padding:20px!important;box-shadow:0 16px 30px #28251f20}
+#icr-metrics .report-stat-strip small{color:#e3d5be!important}#icr-metrics .report-stat-strip b{color:#fff7e9!important;font-size:clamp(32px,4vw,56px)!important}#icr-metrics .report-stat-strip>div:first-child b{color:#edc784!important}
+#cross-errors .sig-bar{height:62px!important}#cross-errors .sig-bar .omi{background:#e5a47b!important;color:#302219!important}#cross-errors .sig-bar .ins{background:#a9b698!important;color:#182019!important}#cross-errors .sig-bar .sub{background:#c7baab!important;color:#302a23!important}
+#cross-errors .sig-legend span:nth-child(1) i{background:#c7baab!important}#cross-errors .sig-legend span:nth-child(2) i{background:#e5a47b!important}#cross-errors .sig-legend span:nth-child(3) i{background:#a9b698!important}
+
+#metrics .section-head,#errors .section-head,#entities .entity-content>h2,#stability .section-head{max-width:1100px!important}
+#metrics h2,#errors h2,#entities h2,#stability h2{font-size:clamp(34px,4vw,58px)!important;line-height:1.05!important}
+#metrics .section-head>p:not(.eyebrow),#errors .section-head>p:not(.eyebrow){font-size:16px!important;margin:10px 0!important}
+#metrics .academic-chart-shell,#errors #errorBars,.number-comparison,.extreme-chart{background:#252c27!important;color:#fff7e9!important;border:1px solid #454d41!important;border-radius:12px!important;box-shadow:0 22px 45px #28251f26!important;padding:26px 30px!important}
+#metrics .academic-chart-topline .mini-label,#metrics .academic-sample-note,#metrics .academic-toolbar-left>.mini-label{color:#d3c7b4!important}
+#metrics .academic-chart-topline strong{color:#fff7e9!important;font-size:20px!important}
+#metrics .academic-chart-toolbar{margin:12px 0!important}
+#metrics .academic-metric-row{grid-template-columns:135px minmax(0,1fr) 160px!important;padding:14px 12px!important;border-color:#ffffff19!important}
+#metrics .academic-metric-row.best-result{background:#e6c68e17!important;border-color:#e6c68e!important}
+#metrics .academic-engine{color:#f6eddf!important;font-size:17px!important;font-weight:600}
+#metrics .academic-cer-track{height:38px!important;background:#ffffff0c!important;overflow:visible!important}
+#metrics .academic-cer-fill{background:#a5ad9c!important;border-radius:3px!important}
+#metrics .best-result .academic-cer-fill{background:#edc784!important}
+#metrics .chart-value{font-size:38px!important;color:#fff7e9!important;line-height:1.05}
+#metrics .best-result .chart-value,#metrics .chart-value small{color:#edc784!important}
+#metrics .chart-value small{font-size:11px!important;margin-top:5px}
+#metrics .visual-axis-note{color:#d3c7b4!important;padding-bottom:0}
+#metrics .academic-definitions{display:grid!important;grid-template-columns:1fr 1fr!important;margin:18px 0 0!important;gap:16px!important}
+#metrics .metric-definition-card{padding:12px 16px!important;background:transparent!important;border:0!important;border-left:2px solid #b7a383!important}
+#metrics .metric-def-top b{font-size:22px!important}#metrics .metric-def-top span{font-size:11px!important}
+#metrics .metric-example{margin:6px 0!important}.formula-detail{display:inline-block}.metric-definition-card>small{font-size:12px!important}
+.secondary-evidence{padding:12px 0;color:var(--muted);font-size:14px}.secondary-evidence summary{cursor:pointer;list-style-position:inside;font-weight:600}
+#errors .error-layout{display:block!important}#errors #errorBars{padding:30px!important}
+#errors .stack-row{grid-template-columns:125px 1fr!important;gap:22px!important;margin:0 0 22px!important}
+#errors .stack-row .engine{color:#fff7e9!important;font-size:16px!important}
+#errors .bar{height:54px!important;background:transparent!important}
+#errors .bar .ins{background:#a9b698!important;color:#182019!important}
+#errors .bar .omi{background:#e5a47b!important;color:#302219!important}
+#errors .bar .sub{background:#c7baab!important;color:#302a23!important}
+#errors .bar span.minor{opacity:.32!important}
+#errors #errorBars .legend{color:#e1d7c6!important;font-size:13px!important}
+#errors .error-story{display:grid!important;grid-template-columns:repeat(3,1fr);gap:12px}
+#errors .error-lab-intro{margin-top:12px!important}#errors .error-lab-intro p{font-size:15px!important}
+#errors .confusion-strip{margin:10px 0!important}#errors .error-lab{padding:16px!important}
+.number-comparison{margin:22px 0!important;padding:28px!important}
+.number-comparison figcaption{font-size:16px!important;color:#e9dfcc!important;margin-bottom:30px!important}
+.number-row{grid-template-columns:95px 1fr 110px!important;gap:16px!important;margin:26px 0!important}
+.number-row>span{color:#fff7e9!important;font-size:16px}
+.number-row>div{height:36px!important;background:#ffffff10!important}
+.number-row i{background:#a5ad9c!important;border-radius:3px}
+.number-row.winner i{background:#edc784!important}.number-row b{font-size:29px!important;color:#fff7e9!important}
+.number-row.winner b,.number-gap{color:#edc784!important}
+.number-gap{font-size:54px!important;border-color:#ffffff25!important;padding-top:20px!important}
+.number-gap small{color:#ebd9b9!important;font-size:14px!important}.number-comparison>small{color:#d3c7b4!important}
+.extreme-chart figcaption{font-size:16px!important}.extreme-legend{color:#dacdb7!important;font-size:13px!important}
+.extreme-row{grid-template-columns:90px 1fr 80px!important;margin:36px 0!important;gap:16px!important}
+.extreme-row>b{font-size:15px!important;color:#fff7e9}.extreme-link{height:4px!important;background:#acb79e!important}
+.typical-dot{width:15px!important;height:15px!important;border-color:#c5d3b9!important;background:#252c27!important}.maximum-dot{width:17px!important;height:17px!important;background:#edc784!important}
+.extreme-row strong{color:#edc784!important;font-size:22px!important}
+#stability .stability-grid{grid-template-columns:.65fr 1.35fr!important}
+#stability .stability-card{box-shadow:none!important;background:transparent!important;padding:14px!important;border-color:#c5bda9!important}
+@media(max-width:980px){#stability .stability-grid{grid-template-columns:1fr!important}#stability .extreme-chart{grid-row:1}}
+@media(max-width:600px){#metrics .academic-chart-shell,#errors #errorBars,.number-comparison,.extreme-chart{padding:18px 14px!important}#metrics .academic-metric-row{grid-template-columns:78px 1fr 94px!important;gap:8px!important;padding:16px 4px!important}#metrics .academic-engine{font-size:12px!important}#metrics .chart-value{font-size:27px!important}#metrics .academic-definitions{grid-template-columns:1fr!important}.number-row{grid-template-columns:70px 1fr 83px!important;gap:8px!important}.number-row b{font-size:22px!important}.number-row>span{font-size:13px!important}.number-gap{font-size:42px!important}.number-gap small{display:block}.extreme-row{grid-template-columns:75px 1fr 70px!important;gap:8px!important}.extreme-row>b{font-size:12px!important}.extreme-row strong{font-size:18px!important}#errors .stack-row{grid-template-columns:1fr!important;gap:8px!important}#errors .bar span{font-size:12px!important}#errors .error-story{grid-template-columns:1fr!important}}
 </style></head>
 <body class="">
 <div aria-hidden="true" class="intro-curtain done" id="introCurtain">
@@ -4290,20 +4351,7 @@ button:focus-visible,[role=slider]:focus-visible{outline:3px solid var(--terraco
 <h2>OlmOCR registra el menor error típico</h2>
 <p class="metrics-design-line">Mismas 30 imágenes originales · misma referencia manual · cuatro motores</p>
 </header>
-<div class="metric-explain academic-definitions reveal delay-1">
-<div class="metric-definition-card">
-<div class="metric-def-top"><b>CER</b><span>Character Error Rate</span></div>
-<details class="formula-detail"><summary>Ver fórmula</summary><code>(S + D + I) / caracteres de referencia</code></details>
-<div class="metric-example"><span>Bogotá</span><i>→</i><span>Bogota</span></div>
-<small>Evalúa el texto carácter a carácter. Se preservan tildes y signos.</small>
-</div>
-<div class="metric-definition-card">
-<div class="metric-def-top"><b>WER</b><span>Word Error Rate</span></div>
-<details class="formula-detail"><summary>Ver fórmula</summary><code>(S + D + I) / palabras de referencia</code></details>
-<div class="metric-example"><span>Juan Friede</span><i>→</i><span>Juan Fride</span></div>
-<small>Evalúa la secuencia a nivel de palabra.</small>
-</div>
-</div>
+
 <div class="chart-shell academic-chart-shell reveal delay-2">
 <div class="academic-chart-topline">
 <div>
@@ -4370,6 +4418,19 @@ button:focus-visible,[role=slider]:focus-visible{outline:3px solid var(--terraco
 <div class="academic-number"><span>4.60%</span></div>
 <div class="academic-number is-focus"><span>20.60%</span></div>
 </div></div>
+</div><div class="metric-explain academic-definitions reveal delay-1">
+<div class="metric-definition-card">
+<div class="metric-def-top"><b>CER</b><span>Character Error Rate</span></div>
+<details class="formula-detail"><summary>Ver fórmula</summary><code>(S + D + I) / caracteres de referencia</code></details>
+<div class="metric-example"><span>Bogotá</span><i>→</i><span>Bogota</span></div>
+<small>Evalúa el texto carácter a carácter. Se preservan tildes y signos.</small>
+</div>
+<div class="metric-definition-card">
+<div class="metric-def-top"><b>WER</b><span>Word Error Rate</span></div>
+<details class="formula-detail"><summary>Ver fórmula</summary><code>(S + D + I) / palabras de referencia</code></details>
+<div class="metric-example"><span>Juan Friede</span><i>→</i><span>Juan Fride</span></div>
+<small>Evalúa la secuencia a nivel de palabra.</small>
+</div>
 </div>
 </div>
 </section>
@@ -4411,11 +4472,11 @@ button:focus-visible,[role=slider]:focus-visible{outline:3px solid var(--terraco
 <span class="sub" style="width:36.86%">37%</span>
 </div>
 </div><div class="legend"><span><i class="dot original"></i>Inserción</span><span><i class="dot pre"></i>Omisión</span><span><i class="dot" style="background:#4e4b46"></i>Sustitución</span></div></div>
-<div class="error-story reveal-right">
+<details class="secondary-evidence"><summary>Interpretación por motor</summary><div class="error-story reveal-right">
 <article><span class="error-kicker">OlmOCR</span><b>Tiende a omitir</b><p>En original, 66.90% de sus errores son omisiones.</p></article>
 <article><span class="error-kicker">PaddleOCR</span><b>Tiende a insertar</b><p>En original, 68.84% de sus errores son inserciones.</p></article>
 <article><span class="error-kicker">Tesseract</span><b>Perfil más repartido</b><p>Inserciones, omisiones y sustituciones aparecen en proporciones más cercanas.</p></article>
-</div>
+</div></details>
 </div>
 <div class="error-lab-intro reveal delay-2">
 <div>
@@ -4452,7 +4513,7 @@ button:focus-visible,[role=slider]:focus-visible{outline:3px solid var(--terraco
 <p class="eyebrow">Información crítica</p>
 <h2>Menor error no significa conservar más números</h2>
 <p class="lead">Un documento puede ser “legible” y aun así perder lo que necesitamos buscar: nombres, fechas, números o códigos.</p>
-<figure aria-label="Preservación de números: OlmOCR 70,87 por ciento y PaddleOCR 97,64 por ciento" class="number-comparison"><figcaption>Números preservados · misma referencia OCR</figcaption><div class="number-row"><span>OlmOCR</span><div><i style="width:70.87%"></i></div><b>70,87 %</b></div><div class="number-row winner"><span>PaddleOCR</span><div><i style="width:97.64%"></i></div><b>97,64 %</b></div><div class="number-gap">+26,77 <small>puntos porcentuales · PaddleOCR</small></div><small>Escala común: 0–100 % · 127 entidades numéricas de referencia</small></figure><div class="entity-controls">
+<figure aria-label="Preservación de números: OlmOCR 70,87 por ciento y PaddleOCR 97,64 por ciento" class="number-comparison"><figcaption>Números preservados · misma referencia OCR</figcaption><div class="number-row"><span>OlmOCR</span><div><i style="width:70.87%"></i></div><b>70,87 %</b></div><div class="number-row winner"><span>PaddleOCR</span><div><i style="width:97.64%"></i></div><b>97,64 %</b></div><div class="number-gap">+26,77 <small>puntos porcentuales · PaddleOCR</small></div><small>Escala común: 0–100 % · 127 entidades numéricas de referencia</small></figure><details class="secondary-evidence entity-explorer"><summary>Explorar otras entidades por motor</summary><div class="entity-controls">
 <span class="mini-label">Motor</span>
 <div class="segmented" id="entityMotorControls">
 <button class="active" data-engine="OLMOCR">OlmOCR</button>
@@ -4460,8 +4521,7 @@ button:focus-visible,[role=slider]:focus-visible{outline:3px solid var(--terraco
 <button class="" data-engine="TESSERACT">Tesseract</button>
 <button class="" data-engine="EASYOCR">EasyOCR</button>
 </div>
-</div>
-<div class="entity-chart" id="entityChart"><div class="entity-row">
+</div><div class="entity-chart" id="entityChart"><div class="entity-row">
 <span>Códigos</span>
 <div class="entity-bar"><i style="width:63.64%"></i></div>
 <b>63.64%</b>
@@ -4477,8 +4537,9 @@ button:focus-visible,[role=slider]:focus-visible{outline:3px solid var(--terraco
 <span>Números</span>
 <div class="entity-bar"><i style="width:95.28%"></i></div>
 <b>95.28%</b>
-</div></div>
-<p class="chart-note">Tasa de preservación en la condición <b>original</b>. </p><p class="entity-denominator-note"><b>Nota metodológica:</b> fechas (n=5) y códigos (n=11) tienen denominadores pequeños; sus diferencias deben interpretarse con cautela.</p>
+</div></div><p class="chart-note">Tasa de preservación en la condición <b>original</b>. </p><p class="entity-denominator-note"><b>Nota metodológica:</b> fechas (n=5) y códigos (n=11) tienen denominadores pequeños; sus diferencias deben interpretarse con cautela.</p></details>
+
+
 </div>
 </div>
 </section>
