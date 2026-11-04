@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 
-
 <html lang="es"><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta content="#efe8da" name="theme-color"/>
@@ -3805,6 +3804,43 @@ img{height:auto}
   .closing-content h2{font-size:clamp(38px,12vw,58px)}
   .thanks-final .thanks-card{padding:28px 18px!important}
 }
+</style><style id="academic-reading-refinements">
+/* Refinamientos de lectura para proyección: papel, tinta y sellos de archivo. */
+:root{--ink:#28251f;--muted:#595349;--terracotta:#963e2b;--terracotta-2:#743022;--olive:#53634a;--serif:Charter,"Bitstream Charter","Iowan Old Style","Palatino Linotype",Georgia,serif;--sans:"Segoe UI",Calibri,Carlito,Arial,sans-serif}
+body{text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}
+h1,h2,h3{text-wrap:balance;letter-spacing:-.028em}
+h2{line-height:1.08!important;font-weight:500}
+p{line-height:1.6;text-wrap:pretty}
+.section-head>p:not(.eyebrow){font-size:clamp(17px,1.4vw,21px)!important;color:var(--muted)}
+.section-head.light>p:not(.eyebrow),.section-dark .section-head>p:not(.eyebrow){color:#e4d8c6}
+.eyebrow{font-size:12px!important;letter-spacing:.14em!important;font-weight:700}
+.lead{font-size:clamp(18px,1.5vw,22px)!important;line-height:1.6!important}
+.section-head{margin-bottom:32px!important}
+.chart-note,.entity-denominator-note,.academic-sample-note{font-size:13px!important;line-height:1.5!important;color:var(--muted)}
+.metric-def-top span,.metric-definition-card small{font-size:14px!important;line-height:1.5}
+.metric-example{font-family:var(--serif);font-size:24px!important;letter-spacing:.02em}
+.metric-definition-card code{font-size:13px!important;color:var(--muted)}
+.academic-engine,.stack-row .engine,.entity-row>span{font-size:14px!important;letter-spacing:.02em}
+.academic-number,.entity-row>b,.stability-card>b{font-variant-numeric:tabular-nums lining-nums}
+.academic-number b{color:var(--terracotta)}
+.segmented button{font-size:14px!important;min-height:38px}
+.segmented button.active{box-shadow:0 3px 10px #28251f20}
+.error-story article b{font-family:var(--serif);font-size:25px!important;font-weight:500}
+.error-story article p{font-size:15px!important;line-height:1.5}
+.entity-tag{font-size:13px!important;font-weight:700;box-shadow:0 4px 14px #28251f20}
+.stability-card .range{font-size:13px!important;line-height:1.5}
+.grain{opacity:.075}
+.reading-key{display:flex;align-items:baseline;gap:12px;margin:18px 0 0;padding:12px 16px;border-left:3px solid var(--terracotta);background:rgba(150,62,43,.055);border-radius:0 6px 6px 0;font-size:clamp(16px,1.35vw,20px);line-height:1.4;color:var(--ink);text-wrap:pretty}
+.reading-key small{flex-shrink:0;font-family:var(--sans);font-weight:700;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--terracotta)}
+.reading-key strong{font-weight:600}
+.section-dark .reading-key{background:rgba(245,235,218,.08);color:#f8eedf;border-color:#dbb48a}
+.section-dark .reading-key small{color:#dbb48a}
+button:focus-visible,[role=slider]:focus-visible{outline:3px solid var(--terracotta);outline-offset:4px}
+@media(min-width:981px){#metrics h2,#errors h2,#stability h2{font-size:clamp(38px,4.2vw,62px)!important}}
+@media(max-width:700px){.reading-key{display:block;font-size:17px}.reading-key small{display:block;margin-bottom:5px}.section-head{margin-bottom:24px!important}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}}
+
+.metric-example span{font-size:20px!important;letter-spacing:0!important;text-transform:none!important}
 </style></head>
 <body class="">
 <div aria-hidden="true" class="intro-curtain done" id="introCurtain">
@@ -3838,7 +3874,6 @@ img{height:auto}
 <button class="" data-go="benchmark"><span>06</span><em>OCR</em></button>
 <button class="" data-go="icr-intro"><span>07</span><em>ICR</em></button><button class="" data-go="cross-intro"><span>08</span><em>Cruce OCR / ICR</em></button>
 <button class="" data-go="synthesis"><span>09</span><em>Síntesis</em></button>
-
 <button class="" data-go="closing"><span>10</span><em>Cierre</em></button>
 </nav>
 <main id="deck">
@@ -4016,8 +4051,6 @@ img{height:auto}
 </div>
 </article>
 <div aria-hidden="true" class="v2-arrow">→</div>
-
-
 <article class="v2-card v2-card-wide">
 <span class="v2-num">03</span>
 <div class="v2-media v2-recognition">
@@ -4112,8 +4145,6 @@ img{height:auto}
 </div>
 </div>
 </section>
-
-
 <!-- TWO BRANCHES -->
 <section class="chapter tracks-section tracks-method-section is-visible" data-chapter="05" data-study="bridge" id="tracks">
 <div class="section-inner">
@@ -4214,7 +4245,7 @@ img{height:auto}
 <p class="eyebrow">Error global · CER / WER</p>
 <h2>¿Cuánto se equivoca cada motor?</h2>
 <p class="metrics-design-line">Mismas 30 imágenes originales · misma referencia manual · cuatro motores</p>
-</header>
+<div class="reading-key"><small>Hallazgo</small><strong>OlmOCR tiene el menor error típico; falta observar qué información conserva.</strong></div></header>
 <div class="metric-explain academic-definitions reveal delay-1">
 <div class="metric-definition-card">
 <div class="metric-def-top"><b>CER</b><span>Character Error Rate</span></div>
@@ -4241,8 +4272,8 @@ img{height:auto}
 <div class="academic-toolbar-left">
 <span class="mini-label">Gráfica principal</span>
 <div class="segmented academic-segmented" id="metricToggle">
-<button class="" data-metric-toggle="cer" type="button">CER</button>
-<button class="active" data-metric-toggle="wer" type="button">WER</button>
+<button class="active" data-metric-toggle="cer" type="button">CER</button>
+<button class="" data-metric-toggle="wer" type="button">WER</button>
 </div>
 </div>
 </div>
@@ -4305,7 +4336,7 @@ img{height:auto}
 <p class="eyebrow">Más allá del score</p>
 <h2>Cada motor tiene una firma de error distinta</h2>
 <p>La misma cantidad total de error puede esconder comportamientos muy diferentes: sustituir, omitir o insertar.</p>
-</header>
+<div class="reading-key"><small>Interpretación</small><strong>Omitir, insertar y sustituir producen pérdidas de información diferentes.</strong></div></header>
 <div class="error-layout">
 <div class="stacked-chart reveal-left" id="errorBars"><div class="stack-row">
 <div class="engine">OLMOCR</div>
@@ -4380,10 +4411,10 @@ img{height:auto}
 <div class="entity-controls">
 <span class="mini-label">Motor</span>
 <div class="segmented" id="entityMotorControls">
-<button class="" data-engine="OLMOCR">OlmOCR</button>
+<button class="active" data-engine="OLMOCR">OlmOCR</button>
 <button class="" data-engine="PADDLEOCR">PaddleOCR</button>
 <button class="" data-engine="TESSERACT">Tesseract</button>
-<button class="active" data-engine="EASYOCR">EasyOCR</button>
+<button class="" data-engine="EASYOCR">EasyOCR</button>
 </div>
 </div>
 <div class="entity-chart" id="entityChart"><div class="entity-row">
@@ -4404,7 +4435,7 @@ img{height:auto}
 <b>95.28%</b>
 </div></div>
 <p class="chart-note">Tasa de preservación en la condición <b>original</b>. </p><p class="entity-denominator-note"><b>Nota metodológica:</b> fechas (n=5) y códigos (n=11) tienen denominadores pequeños; sus diferencias deben interpretarse con cautela.</p>
-</div>
+<div class="reading-key"><small>Dato clave</small><strong>Números preservados: 70,87 % con OlmOCR frente a 97,64 % con PaddleOCR.</strong></div></div>
 </div>
 </section>
 <!-- STABILITY -->
@@ -4414,7 +4445,7 @@ img{height:auto}
 <p class="eyebrow">Riesgo y consistencia</p>
 <h2>El promedio tampoco cuenta toda la historia</h2>
 <p>Mediana, IQR, P90 y máximo permiten separar el comportamiento típico de los fallos extremos.</p>
-</header>
+<div class="reading-key"><small>Lectura del resultado</small><strong>Un buen resultado típico puede coexistir con fallos en documentos difíciles.</strong></div></header>
 <div class="stability-grid">
 <div class="stability-cards reveal-left" id="stabilityCards"><article class="stability-card">
 <div class="stability-head">
@@ -4457,13 +4488,9 @@ img{height:auto}
 <div class="range"><span>IQR 4.60%</span><span>P90 20.00%</span><span>max 41.20%</span></div>
 <div class="stability-scale"><i style="width:68.66666666666667%"></i></div>
 </article></div>
-
 </div>
-
 </div>
 </section>
-
-
 <!-- ICR TRANSITION -->
 <section class="chapter icr-intro-section section-dark is-visible" data-chapter="11" data-study="icr" id="icr-intro">
 <div class="icr-bg" style="--hand:url('https://ocr-icr-documentos.vercel.app/assets/image-2-46f3a2a78be9.png')"></div>
@@ -4494,7 +4521,7 @@ img{height:auto}
 <p class="eyebrow">ICR · primera capa</p>
 <h2>La exactitud global es solo el punto de partida</h2>
 <p>En los 30 documentos manuscritos, OlmOCR presenta una mediana de <b>9,2 % CER</b> y <b>21,7 % WER</b>. En el reporte, la mediana se acompaña del rango intercuartílico para mostrar la dispersión central.</p>
-</header>
+<div class="reading-key"><small>Alcance</small><strong>Estos resultados describen el corpus manuscrito; no son un ranking entre motores.</strong></div></header>
 <div class="report-figure-card reveal delay-1 metric-report-card">
 <img alt="Figura del reporte ICR con la mediana y el rango intercuartílico de CER y WER para OlmOCR" decoding="async" loading="lazy" src="https://ocr-icr-documentos.vercel.app/assets/image-21-79629c74f075.png"/>
 </div>
@@ -4718,15 +4745,13 @@ img{height:auto}
 </div>
 </div>
 </section>
-
-
 <!-- CLOSING -->
 <section class="chapter closing section-dark is-visible" data-chapter="20" id="closing">
 <div class="closing-bg parallax" data-depth="0.05"></div>
 <div class="closing-shade"></div>
 <div class="closing-content reveal">
 <p class="eyebrow light">Del documento impreso o manuscrito a información recuperable</p>
-<h2>Reconocer texto —impreso o manuscrito— es solo el comienzo.</h2>
+<h2>Reconocer más texto no significa recuperar mejor la información.</h2>
 <p>Entender cómo se equivoca el sistema permite decidir cuánto podemos confiar en lo que recupera.</p>
 <div class="closing-sequence"><span>medir</span><i>→</i><span>caracterizar</span><i>→</i><span>preservar</span><i>→</i><span>decidir</span></div>
 <div class="credits">Angie Valentina Donato Pita · Alejandro Bernal Guaman<br/><small>Asesor: Albert Montenegro</small></div>
