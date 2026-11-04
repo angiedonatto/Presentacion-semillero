@@ -3841,6 +3841,50 @@ button:focus-visible,[role=slider]:focus-visible{outline:3px solid var(--terraco
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}}
 
 .metric-example span{font-size:20px!important;letter-spacing:0!important;text-transform:none!important}
+</style><style id="findings-in-the-charts">
+/* Visual hierarchy of findings, shared scales, direct labels. */
+.visual-axis-note{font-size:13px;color:var(--muted);padding:14px 16px;text-align:right}
+#metrics .academic-metric-header,#metrics .metric-axis-row{display:none!important}
+#metrics .academic-metric-row{display:grid!important;grid-template-columns:130px minmax(0,1fr) 130px!important;gap:20px!important;padding:20px 16px!important;border-bottom:1px solid var(--line);align-items:center}
+#metrics .academic-metric-row.best-result{background:#53634a12;border-left:4px solid var(--olive);border-radius:6px}
+#metrics .academic-engine{font-size:16px!important}
+#metrics .academic-cer-track{height:28px!important;background:#ded5c655!important}
+#metrics .academic-cer-fill{height:100%!important;background:#b6a794!important;border-radius:0 4px 4px 0}
+#metrics .best-result .academic-cer-fill{background:var(--olive)!important;min-width:5px}
+#metrics .academic-cer-dot{display:none}
+#metrics .chart-value{font-size:30px;font-weight:700;font-variant-numeric:tabular-nums;text-align:right}
+#metrics .chart-value small{display:block;font-size:11px;color:var(--olive);letter-spacing:.04em}
+#metrics .academic-chart-topline strong{font-size:22px!important}
+#metrics .academic-definitions{gap:18px!important;margin-bottom:20px}
+#metrics .metric-definition-card{padding:14px 18px!important}
+.formula-detail{font-size:12px;color:var(--muted);margin-top:8px}.formula-detail summary{cursor:pointer}.formula-detail code{display:block;margin-top:8px}
+#errors .error-layout{grid-template-columns:1.5fr 1fr!important;gap:32px!important}
+#errors .stack-row{grid-template-columns:115px 1fr!important;margin-bottom:24px!important}
+#errors .bar{height:52px!important;border-radius:4px;overflow:visible}
+#errors .bar span{display:flex;align-items:center;justify-content:center;font-size:14px!important;white-space:nowrap;min-width:0}
+#errors .bar .ins{background:#53634a!important;color:#fff!important}
+#errors .bar .omi{background:#963e2b!important;color:#fff!important}
+#errors .bar .sub{background:#81725f!important;color:#fff!important}
+#errors .bar span.minor{opacity:.48;font-size:0!important}
+#errors .error-story article{padding:15px!important}
+.number-comparison{margin:20px 0 24px;padding:20px;background:#fffaf0;border:1px solid var(--line);box-shadow:0 8px 24px #28251f08}
+.number-comparison figcaption,.extreme-chart figcaption{font-size:14px;font-weight:700;margin-bottom:22px}
+.number-row{display:grid;grid-template-columns:90px 1fr 88px;align-items:center;gap:12px;margin:18px 0;font-size:14px}
+.number-row>div{background:#e5dccd;height:23px}.number-row i{display:block;height:100%;background:#aa9980}
+.number-row.winner i{background:var(--olive)}.number-row.winner b{color:var(--olive)}.number-row b{font-size:20px;font-variant-numeric:tabular-nums}
+.number-gap{color:var(--olive);font-size:36px;font-family:var(--serif);border-top:1px solid var(--line);padding-top:12px;margin-top:20px}.number-gap small{font:13px var(--sans)}
+.number-comparison>small{display:block;font-size:11px;margin-top:10px;color:var(--muted)}
+#entities .entity-controls{margin-top:14px!important}#entities .entity-chart .entity-row{padding:5px 0!important}#entities .entity-chart .entity-row:last-child{background:#53634a10;font-weight:700}
+#stability .stability-grid{grid-template-columns:.8fr 1.2fr!important;gap:30px!important}
+.extreme-chart{margin:0;padding:28px;background:#fffaf0;border:1px solid var(--line);align-self:start}
+.extreme-legend{display:flex;gap:20px;font-size:12px;color:var(--muted);margin-bottom:28px}
+.extreme-row{display:grid;grid-template-columns:85px 1fr 65px;align-items:center;gap:15px;margin:30px 0;font-size:13px}
+.extreme-track{height:28px;position:relative;background:repeating-linear-gradient(90deg,transparent 0,transparent calc(33.333% - 1px),#28251f14 calc(33.333% - 1px),#28251f14 33.333%)}
+.extreme-link{position:absolute;height:3px;top:13px;background:#bca889}.typical-dot,.maximum-dot{position:absolute;top:8px;width:13px;height:13px;border-radius:50%;transform:translateX(-50%)}.typical-dot{border:2px solid var(--olive);background:#fffaf0}.maximum-dot{background:var(--terracotta)}
+.extreme-row strong{color:var(--terracotta);font-variant-numeric:tabular-nums;font-size:17px}
+#cross-entities .entity-cross-row:nth-child(3){border:2px solid var(--terracotta);background:#963e2b08;padding:18px;border-radius:6px}
+@media(max-width:980px){#errors .error-layout,#stability .stability-grid{grid-template-columns:1fr!important}}
+@media(max-width:600px){#metrics .academic-metric-row{grid-template-columns:82px 1fr 75px!important;gap:8px!important;padding:16px 6px!important}#metrics .chart-value{font-size:23px}#metrics .academic-engine{font-size:12px!important}.number-row{grid-template-columns:75px 1fr 75px;gap:8px}.number-row b{font-size:17px}.extreme-chart{padding:18px}.extreme-row{grid-template-columns:75px 1fr 60px;gap:8px}}
 </style></head>
 <body class="">
 <div aria-hidden="true" class="intro-curtain done" id="introCurtain">
@@ -4243,19 +4287,19 @@ button:focus-visible,[role=slider]:focus-visible{outline:3px solid var(--terraco
 <div class="section-inner">
 <header class="section-head reveal metrics-head">
 <p class="eyebrow">Error global · CER / WER</p>
-<h2>¿Cuánto se equivoca cada motor?</h2>
+<h2>OlmOCR registra el menor error típico</h2>
 <p class="metrics-design-line">Mismas 30 imágenes originales · misma referencia manual · cuatro motores</p>
-<div class="reading-key"><small>Hallazgo</small><strong>OlmOCR tiene el menor error típico; falta observar qué información conserva.</strong></div></header>
+</header>
 <div class="metric-explain academic-definitions reveal delay-1">
 <div class="metric-definition-card">
 <div class="metric-def-top"><b>CER</b><span>Character Error Rate</span></div>
-<code>(S + D + I) / caracteres de referencia</code>
+<details class="formula-detail"><summary>Ver fórmula</summary><code>(S + D + I) / caracteres de referencia</code></details>
 <div class="metric-example"><span>Bogotá</span><i>→</i><span>Bogota</span></div>
 <small>Evalúa el texto carácter a carácter. Se preservan tildes y signos.</small>
 </div>
 <div class="metric-definition-card">
 <div class="metric-def-top"><b>WER</b><span>Word Error Rate</span></div>
-<code>(S + D + I) / palabras de referencia</code>
+<details class="formula-detail"><summary>Ver fórmula</summary><code>(S + D + I) / palabras de referencia</code></details>
 <div class="metric-example"><span>Juan Friede</span><i>→</i><span>Juan Fride</span></div>
 <small>Evalúa la secuencia a nivel de palabra.</small>
 </div>
@@ -4334,9 +4378,9 @@ button:focus-visible,[role=slider]:focus-visible{outline:3px solid var(--terraco
 <div class="section-inner">
 <header class="section-head reveal">
 <p class="eyebrow">Más allá del score</p>
-<h2>Cada motor tiene una firma de error distinta</h2>
+<h2>OlmOCR omite; PaddleOCR inserta</h2>
 <p>La misma cantidad total de error puede esconder comportamientos muy diferentes: sustituir, omitir o insertar.</p>
-<div class="reading-key"><small>Interpretación</small><strong>Omitir, insertar y sustituir producen pérdidas de información diferentes.</strong></div></header>
+</header>
 <div class="error-layout">
 <div class="stacked-chart reveal-left" id="errorBars"><div class="stack-row">
 <div class="engine">OLMOCR</div>
@@ -4406,9 +4450,9 @@ button:focus-visible,[role=slider]:focus-visible{outline:3px solid var(--terraco
 </div>
 <div class="entity-content reveal-right">
 <p class="eyebrow">Información crítica</p>
-<h2>No todos los errores pesan igual</h2>
+<h2>Menor error no significa conservar más números</h2>
 <p class="lead">Un documento puede ser “legible” y aun así perder lo que necesitamos buscar: nombres, fechas, números o códigos.</p>
-<div class="entity-controls">
+<figure aria-label="Preservación de números: OlmOCR 70,87 por ciento y PaddleOCR 97,64 por ciento" class="number-comparison"><figcaption>Números preservados · misma referencia OCR</figcaption><div class="number-row"><span>OlmOCR</span><div><i style="width:70.87%"></i></div><b>70,87 %</b></div><div class="number-row winner"><span>PaddleOCR</span><div><i style="width:97.64%"></i></div><b>97,64 %</b></div><div class="number-gap">+26,77 <small>puntos porcentuales · PaddleOCR</small></div><small>Escala común: 0–100 % · 127 entidades numéricas de referencia</small></figure><div class="entity-controls">
 <span class="mini-label">Motor</span>
 <div class="segmented" id="entityMotorControls">
 <button class="active" data-engine="OLMOCR">OlmOCR</button>
@@ -4435,7 +4479,7 @@ button:focus-visible,[role=slider]:focus-visible{outline:3px solid var(--terraco
 <b>95.28%</b>
 </div></div>
 <p class="chart-note">Tasa de preservación en la condición <b>original</b>. </p><p class="entity-denominator-note"><b>Nota metodológica:</b> fechas (n=5) y códigos (n=11) tienen denominadores pequeños; sus diferencias deben interpretarse con cautela.</p>
-<div class="reading-key"><small>Dato clave</small><strong>Números preservados: 70,87 % con OlmOCR frente a 97,64 % con PaddleOCR.</strong></div></div>
+</div>
 </div>
 </section>
 <!-- STABILITY -->
@@ -4443,9 +4487,9 @@ button:focus-visible,[role=slider]:focus-visible{outline:3px solid var(--terraco
 <div class="section-inner">
 <header class="section-head reveal">
 <p class="eyebrow">Riesgo y consistencia</p>
-<h2>El promedio tampoco cuenta toda la historia</h2>
+<h2>Folio 18: el documento más difícil para los cuatro motores</h2>
 <p>Mediana, IQR, P90 y máximo permiten separar el comportamiento típico de los fallos extremos.</p>
-<div class="reading-key"><small>Lectura del resultado</small><strong>Un buen resultado típico puede coexistir con fallos en documentos difíciles.</strong></div></header>
+</header>
 <div class="stability-grid">
 <div class="stability-cards reveal-left" id="stabilityCards"><article class="stability-card">
 <div class="stability-head">
@@ -4488,7 +4532,7 @@ button:focus-visible,[role=slider]:focus-visible{outline:3px solid var(--terraco
 <div class="range"><span>IQR 4.60%</span><span>P90 20.00%</span><span>max 41.20%</span></div>
 <div class="stability-scale"><i style="width:68.66666666666667%"></i></div>
 </article></div>
-</div>
+<figure class="extreme-chart"><figcaption>CER por motor · originales · escala 0–60 %</figcaption><div class="extreme-legend"><span>○ Mediana</span><span>● Máximo · Folio 18</span></div><div class="extreme-row"><b>OlmOCR</b><div class="extreme-track"><i class="extreme-link" style="left:0.9000000000000001%;width:44.866666666666674%"></i><i class="typical-dot" style="left:0.9000000000000001%" title="Mediana 0.54%"></i><i class="maximum-dot" style="left:45.766666666666666%"></i></div><strong>27.46%</strong></div><div class="extreme-row"><b>PaddleOCR</b><div class="extreme-track"><i class="extreme-link" style="left:2.666666666666667%;width:42.516666666666666%"></i><i class="typical-dot" style="left:2.666666666666667%" title="Mediana 1.6%"></i><i class="maximum-dot" style="left:45.18333333333333%"></i></div><strong>27.11%</strong></div><div class="extreme-row"><b>Tesseract</b><div class="extreme-track"><i class="extreme-link" style="left:4.933333333333334%;width:88.38333333333334%"></i><i class="typical-dot" style="left:4.933333333333334%" title="Mediana 2.96%"></i><i class="maximum-dot" style="left:93.31666666666666%"></i></div><strong>55.99%</strong></div><div class="extreme-row"><b>EasyOCR</b><div class="extreme-track"><i class="extreme-link" style="left:10.1%;width:58.56666666666667%"></i><i class="typical-dot" style="left:10.1%" title="Mediana 6.06%"></i><i class="maximum-dot" style="left:68.66666666666667%"></i></div><strong>41.20%</strong></div></figure></div>
 </div>
 </section>
 <!-- ICR TRANSITION -->
@@ -4519,9 +4563,9 @@ button:focus-visible,[role=slider]:focus-visible{outline:3px solid var(--terraco
 <div class="section-inner">
 <header class="section-head reveal">
 <p class="eyebrow">ICR · primera capa</p>
-<h2>La exactitud global es solo el punto de partida</h2>
+<h2>En manuscritos, el CER mediano es 9,2 %</h2>
 <p>En los 30 documentos manuscritos, OlmOCR presenta una mediana de <b>9,2 % CER</b> y <b>21,7 % WER</b>. En el reporte, la mediana se acompaña del rango intercuartílico para mostrar la dispersión central.</p>
-<div class="reading-key"><small>Alcance</small><strong>Estos resultados describen el corpus manuscrito; no son un ranking entre motores.</strong></div></header>
+</header>
 <div class="report-figure-card reveal delay-1 metric-report-card">
 <img alt="Figura del reporte ICR con la mediana y el rango intercuartílico de CER y WER para OlmOCR" decoding="async" loading="lazy" src="https://ocr-icr-documentos.vercel.app/assets/image-21-79629c74f075.png"/>
 </div>
@@ -4699,7 +4743,7 @@ button:focus-visible,[role=slider]:focus-visible{outline:3px solid var(--terraco
 <div class="section-inner">
 <header class="section-head reveal">
 <p class="eyebrow">Cruce 2 · Información útil + estabilidad</p>
-<h2>La información preservada cambia entre ambos corpus</h2>
+<h2>La mayor diferencia está en los números</h2>
 <p>En ambos estudios se midieron las mismas cuatro categorías conceptuales. Las tasas no son directamente equivalentes porque los corpus y el número de entidades cambian; el contraste describe dónde aparecen las mayores diferencias de preservación.</p>
 </header>
 <div class="cross-entity-grid">
@@ -4855,33 +4899,24 @@ function renderMetric(metric=currentMetric){
   $('#metricWerLabel').classList.toggle('active-col', metric === 'wer');
   $$('#metricToggle button').forEach(btn => btn.classList.toggle('active', btn.dataset.metricToggle === metric));
 
-  const rows = Object.keys(cerCfg.values).map(engine => {
-    const cer = cerCfg.values[engine].original;
-    const wer = werCfg.values[engine].original;
-    const iqr = data.stability[engine].iqr;
-    const plotted = metric === 'wer' ? wer : cer;
-    const p = pct(plotted, cfg.max);
-    return `<div class="academic-metric-row">
-      <div class="academic-engine">${engine}</div>
-      <div class="academic-cer-track" style="--grid-step:${gridStep}%" aria-label="${engine}: ${metric.toUpperCase()} mediano ${fmt(plotted)}">
-        <span class="academic-cer-fill" style="width:${p}%"></span>
-        <i class="academic-cer-dot" style="left:${p}%"></i>
-      </div>
-      <div class="academic-number ${metric === 'cer' ? 'is-focus' : ''}"><b>${fmt(cer)}</b></div>
-      <div class="academic-number"><span>${fmt(iqr)}</span></div>
-      <div class="academic-number ${metric === 'wer' ? 'is-focus' : ''}"><span>${fmt(wer)}</span></div>
-    </div>`;
+  const ranked = Object.keys(cfg.values).sort((a,b)=>cfg.values[a].original-cfg.values[b].original);
+  const rows = ranked.map((engine,index) => {
+    const plotted = cfg.values[engine].original;
+    return `<div class="academic-metric-row ${index===0?'best-result':''}">
+      <div class="academic-engine">${getEngineLabel(engine)}</div>
+      <div class="academic-cer-track" aria-label="${engine}: ${metric.toUpperCase()} mediano ${fmt(plotted)}"><span class="academic-cer-fill" style="width:${pct(plotted,cfg.max)}%"></span></div>
+      <div class="chart-value">${fmt(plotted)}${index===0?'<small>MENOR ERROR</small>':''}</div></div>`;
   });
-  el.innerHTML = rows.join('');
+  el.innerHTML = rows.join('') + `<div class="visual-axis-note">Escala común: 0–${cfg.max} % · ${metric.toUpperCase()} mediano · menor es mejor</div>`;
 }
 
 function renderErrors(){
   $('#errorBars').innerHTML = Object.entries(data.errors).map(([engine,v])=>`<div class="stack-row">
     <div class="engine">${engine}</div>
     <div class="bar" title="Inserción ${v.ins}% · Omisión ${v.omi}% · Sustitución ${v.sub}%">
-      <span class="ins" style="width:${v.ins}%">${v.ins.toFixed(0)}%</span>
-      <span class="omi" style="width:${v.omi}%">${v.omi.toFixed(0)}%</span>
-      <span class="sub" style="width:${v.sub}%">${v.sub.toFixed(0)}%</span>
+      <span class="ins ${v.ins===Math.max(v.ins,v.omi,v.sub)?'dominant':'minor'}" style="width:${v.ins}%" title="Inserción: ${v.ins}%">Inserción ${v.ins.toFixed(0)}%</span>
+      <span class="omi ${v.omi===Math.max(v.ins,v.omi,v.sub)?'dominant':'minor'}" style="width:${v.omi}%" title="Omisión: ${v.omi}%">Omisión ${v.omi.toFixed(0)}%</span>
+      <span class="sub ${v.sub===Math.max(v.ins,v.omi,v.sub)?'dominant':'minor'}" style="width:${v.sub}%" title="Sustitución: ${v.sub}%">Sustitución ${v.sub.toFixed(0)}%</span>
     </div>
   </div>`).join('') + `<div class="legend"><span><i class="dot original"></i>Inserción</span><span><i class="dot pre"></i>Omisión</span><span><i class="dot" style="background:#4e4b46"></i>Sustitución</span></div>`;
 }
