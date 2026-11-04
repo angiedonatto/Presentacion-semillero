@@ -4004,6 +4004,13 @@ button:focus-visible,[role=slider]:focus-visible{outline:3px solid var(--terraco
 #archive-bridge .problem-desc{font-size:23px;line-height:1.4;color:#332d24}
 #archive-bridge .section-head{margin-bottom:24px!important}
 @media(max-width:640px){#archive-bridge .problem-card{padding:24px;min-height:0}#archive-bridge .problem-card b{font-size:28px}#archive-bridge .problem-desc{font-size:21px}}
+</style><style id="script-aligned-tracks">
+#tracks .method-card>p{font-size:23px!important;line-height:1.45!important;color:#332d24}
+#tracks .method-card h3{font-size:clamp(32px,3.2vw,46px)!important;line-height:1.1!important}
+#tracks .method-bullets span{font-size:17px!important;line-height:1.3!important}
+#tracks .method-center b{font-size:25px!important;line-height:1.25!important;max-width:15ch}
+#tracks .method-center>small{font-size:17px!important;line-height:1.4!important;color:#514638}
+@media(max-width:640px){#tracks .method-card>p{font-size:21px!important}#tracks .method-bullets span{font-size:15px!important}}
 </style></head>
 <body class="">
 <div aria-hidden="true" class="intro-curtain done" id="introCurtain">
@@ -4112,7 +4119,6 @@ button:focus-visible,[role=slider]:focus-visible{outline:3px solid var(--terraco
 <header class="section-head centered reveal">
 <p class="eyebrow">Del contexto al experimento</p>
 <h2>¿Dónde está realmente <em>el problema?</em></h2>
-
 </header>
 <div class="problem-grid">
 <article class="problem-card reveal-left">
@@ -4313,8 +4319,8 @@ button:focus-visible,[role=slider]:focus-visible{outline:3px solid var(--terraco
 <div class="section-inner">
 <header class="section-head centered reveal">
 <p class="eyebrow">Diseño del estudio</p>
-<h2>Dos ramas, dos estrategias de análisis</h2>
-<p class="tracks-method-intro"></p>
+<h2>Dos ramas, dos estrategias</h2>
+
 </header>
 <div class="method-stage reveal delay-1">
 <button class="method-card method-ocr" data-go="benchmark">
@@ -4322,37 +4328,37 @@ button:focus-visible,[role=slider]:focus-visible{outline:3px solid var(--terraco
 <small>RAMA OCR</small>
 <span class="method-action">Comparar</span>
 </div>
-<h3>Comparación entre motores</h3>
+<h3>Comparar varios motores</h3>
 <div class="method-bullets method-bullets-ocr">
-<span>Misma entrada</span>
-<span>Misma referencia</span>
-<span>Métricas comparables</span>
+<span>Mismas condiciones</span>
+<span>Cuánto se equivocan</span>
+<span>Cómo se equivocan</span>
 </div>
-<p>La rama OCR se trabaja como benchmark: varios motores leen el mismo conjunto documental y luego sus resultados se contrastan entre sí.</p>
+<p>Comparar varios motores bajo las mismas condiciones y entender cuánto y cómo se equivocaba cada uno.</p>
 <strong>Entrar a OCR →</strong>
 </button>
 <div aria-label="Marco metodológico compartido" class="method-center">
 <span>Mismo propósito</span>
 <i></i>
-<b>recuperar información</b>
-<b>medir calidad</b>
-<b>entender errores</b>
-<b>ajustar el análisis</b>
-<i></i>
-<small>criterio común,<br/>diseño distinto</small>
+
+
+
+
+<b>medir la calidad del reconocimiento</b><b>comprender sus errores</b><i></i>
+<small>Estrategias distintas, mismo propósito</small>
 </div>
 <button class="method-card method-icr" data-go="icr-intro">
 <div class="method-top">
 <small>RAMA ICR</small>
 <span class="method-action">Caracterizar</span>
 </div>
-<h3>Lectura manuscrita</h3>
+<h3>Caracterizar a OlmOCR</h3>
 <div class="method-bullets method-bullets-icr">
-<span>Énfasis cualitativo</span>
-<span>Salida útil</span>
-<span>Dificultades reales</span>
+<span>OlmOCR</span>
+<span>Documentos manuscritos</span>
+<span>Comportamiento</span>
 </div>
-<p>La rama ICR no se presenta como ranking multi-motor: se concentra en revisar las salidas manuscritas que sí aportan evidencia y en describir dónde falla el reconocimiento.</p>
+<p>Nos concentramos en caracterizar el comportamiento de OlmOCR sobre documentos manuscritos.</p>
 <strong>Entrar a ICR →</strong>
 </button>
 </div>
