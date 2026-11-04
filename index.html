@@ -3946,6 +3946,37 @@ button:focus-visible,[role=slider]:focus-visible{outline:3px solid var(--terraco
 #stability .stability-card{box-shadow:none!important;background:transparent!important;padding:14px!important;border-color:#c5bda9!important}
 @media(max-width:980px){#stability .stability-grid{grid-template-columns:1fr!important}#stability .extreme-chart{grid-row:1}}
 @media(max-width:600px){#metrics .academic-chart-shell,#errors #errorBars,.number-comparison,.extreme-chart{padding:18px 14px!important}#metrics .academic-metric-row{grid-template-columns:78px 1fr 94px!important;gap:8px!important;padding:16px 4px!important}#metrics .academic-engine{font-size:12px!important}#metrics .chart-value{font-size:27px!important}#metrics .academic-definitions{grid-template-columns:1fr!important}.number-row{grid-template-columns:70px 1fr 83px!important;gap:8px!important}.number-row b{font-size:22px!important}.number-row>span{font-size:13px!important}.number-gap{font-size:42px!important}.number-gap small{display:block}.extreme-row{grid-template-columns:75px 1fr 70px!important;gap:8px!important}.extreme-row>b{font-size:12px!important}.extreme-row strong{font-size:18px!important}#errors .stack-row{grid-template-columns:1fr!important;gap:8px!important}#errors .bar span{font-size:12px!important}#errors .error-story{grid-template-columns:1fr!important}}
+</style><style id="projector-legibility">
+/* Projector-safe typography and solid contrasting inks. */
+#icr-metrics .report-stat-strip{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:18px!important;background:#202921!important}
+#icr-metrics .report-stat-strip>div{background:#202921!important;min-width:0!important;padding:18px!important}
+#icr-metrics .report-stat-strip b,#icr-metrics .report-stat-strip>div:first-child b{color:#fff!important;white-space:nowrap!important;font-size:clamp(26px,3vw,46px)!important}
+#icr-metrics .report-stat-strip small{color:#fff!important;font-size:20px!important}
+
+:root{--muted:#443e34;--terracotta:#9c301b;--olive:#284a35}
+.source-evidence{font-size:18px;margin-top:20px;color:#332d24}.source-evidence summary{cursor:pointer;font-weight:600}.source-evidence[open]{padding:15px;background:#fffaf0}
+.source-evidence .report-stat-strip>div{background:#fffaf0!important}.source-evidence .report-stat-strip small,.source-evidence .report-stat-strip b{color:#201d18!important}
+.projector-chart{margin:24px 0 0;padding:32px 36px;background:#fffdf5;border:2px solid #39352d;border-radius:8px;box-shadow:0 12px 30px #28251f15}
+.projector-chart figcaption{font-size:24px;font-weight:600;margin-bottom:32px;color:#201d18}
+.projection-row{display:grid;grid-template-columns:150px 1fr 140px;gap:24px;align-items:center;padding:22px 12px;border-bottom:1px solid #c9c0ae}
+.projection-row>span{font-size:26px;font-weight:600}.projection-row>b{font-size:38px;white-space:nowrap;text-align:right;font-variant-numeric:tabular-nums}
+.projection-track{height:42px;background:#e3ddcf;border-radius:2px}.projection-track i{height:100%;display:block;background:#284a35;border-radius:2px}
+.focus-row{background:#f0e2ce;border-left:5px solid #9c301b}.focus-row .projection-track i{background:#9c301b}.focus-row>b{color:#9c301b}
+.projection-axis{display:flex;justify-content:space-between;gap:20px;margin:20px 12px 0;font-size:20px;color:#443e34}
+.projection-example{font-size:38px;font-family:var(--serif);margin-top:24px}.projection-example span{font:22px var(--sans);margin-left:24px}.projection-note{font-size:21px!important;margin:24px 0 0;color:#332d24}
+.paired-row{display:grid;grid-template-columns:90px 1fr;gap:24px;margin:32px 0}.paired-row>span{font-size:30px;font-weight:700}.paired-track{display:grid;grid-template-columns:minmax(0,1fr) 125px 220px;gap:20px;align-items:center;margin-bottom:20px;position:relative}.paired-track i{display:block;height:38px;background:#284a35}.paired-track.maximum i{background:#9c301b}.paired-track b{font-size:32px;white-space:nowrap}.paired-track span{font-size:22px}
+#icr-intro .lead{font-size:26px!important;max-width:32ch;line-height:1.5!important}.icr-facts small{font-size:22px!important}
+#metrics .academic-chart-topline strong{font-size:24px!important}#metrics .visual-axis-note{font-size:20px!important;color:#fff!important}#metrics .academic-engine{font-size:22px!important}#metrics .chart-value small{font-size:17px!important}
+#metrics .academic-chart-shell,#errors #errorBars,.number-comparison,.extreme-chart{background:#202921!important;color:#fff!important}
+#metrics .best-result .academic-cer-fill,.number-row.winner i{background:#fff!important}#metrics .best-result .chart-value,#metrics .chart-value small,.number-row.winner b,.number-gap,.extreme-row strong{color:#fff!important}
+#metrics .academic-cer-fill,.number-row i{background:#93af91!important}#metrics .best-result{border-color:#fff!important}#metrics .metric-definition-card>small,#metrics .metric-def-top span{display:none!important}
+#errors .bar .ins,#cross-errors .sig-bar .ins{background:#245e3d!important;color:#fff!important}#errors .bar .omi,#cross-errors .sig-bar .omi{background:#a7371f!important;color:#fff!important}#errors .bar .sub,#cross-errors .sig-bar .sub{background:#ece4d2!important;color:#201d18!important}#errors .bar span.minor{opacity:1!important}
+#errors .legend .dot.original,#cross-errors .sig-legend span:nth-child(3) i{background:#245e3d!important}#errors .legend .dot.pre,#cross-errors .sig-legend span:nth-child(2) i{background:#a7371f!important}#errors .legend .dot:not(.original):not(.pre),#cross-errors .sig-legend span:nth-child(1) i{background:#ece4d2!important}
+#errors #errorBars .legend{font-size:20px!important;color:#fff!important}#errors .stack-row .engine{font-size:21px!important}#errors .bar span.dominant{font-size:21px!important}
+#errors .confusion-strip{grid-template-columns:repeat(3,1fr)!important}#errors .confusion-strip button{padding:20px!important}#errors .confusion-strip em{font-size:19px!important;letter-spacing:.04em!important}#errors .confusion-strip span,#errors .confusion-strip i{font-size:34px!important}
+#errors .error-lab-intro{display:none!important}.eyebrow{font-size:18px!important;letter-spacing:.08em!important}.section-head{margin-bottom:22px!important}
+.number-comparison figcaption,.extreme-chart figcaption{font-size:22px!important}.number-comparison>small{font-size:18px!important;color:#fff!important}.number-row>span{font-size:22px!important}.number-gap small{font-size:20px!important;color:#fff!important}.extreme-legend{font-size:20px!important;color:#fff!important}.extreme-row>b{font-size:20px!important}.maximum-dot{background:#fff!important}.extreme-link{background:#b6c9ac!important}
+@media(max-width:700px){.projector-chart{padding:20px 14px}.projector-chart figcaption{font-size:20px}.projection-row{grid-template-columns:85px 1fr 85px;gap:8px;padding:18px 4px}.projection-row>span{font-size:17px}.projection-row>b{font-size:24px}.projection-axis{font-size:15px;gap:8px}.projection-track{height:30px}.paired-row{grid-template-columns:1fr;gap:8px}.paired-track{grid-template-columns:1fr 85px;gap:12px}.paired-track span{grid-column:1/-1;font-size:18px}.paired-track b{font-size:24px}#errors .confusion-strip{grid-template-columns:1fr!important}#metrics .academic-engine{font-size:13px!important}#metrics .chart-value small{font-size:11px!important}#metrics .visual-axis-note{font-size:15px!important}.number-row>span{font-size:14px!important}.number-gap small{font-size:16px!important}.extreme-row>b{font-size:13px!important}}
 </style></head>
 <body class="">
 <div aria-hidden="true" class="intro-curtain done" id="introCurtain">
@@ -4351,18 +4382,17 @@ button:focus-visible,[role=slider]:focus-visible{outline:3px solid var(--terraco
 <h2>OlmOCR registra el menor error típico</h2>
 <p class="metrics-design-line">Mismas 30 imágenes originales · misma referencia manual · cuatro motores</p>
 </header>
-
 <div class="chart-shell academic-chart-shell reveal delay-2">
 <div class="academic-chart-topline">
 <div>
-<span class="mini-label">Resumen por motor</span>
+
 <strong>Mediana de error sobre documentos originales</strong>
 </div>
-<div class="academic-sample-note">n = 30 documentos por motor · 120 salidas OCR en total</div>
+
 </div>
 <div aria-label="Selector de métrica para la gráfica principal" class="academic-chart-toolbar">
 <div class="academic-toolbar-left">
-<span class="mini-label">Gráfica principal</span>
+
 <div class="segmented academic-segmented" id="metricToggle">
 <button class="active" data-metric-toggle="cer" type="button">CER</button>
 <button class="" data-metric-toggle="wer" type="button">WER</button>
@@ -4484,18 +4514,18 @@ button:focus-visible,[role=slider]:focus-visible{outline:3px solid var(--terraco
 </div>
 </div>
 <div class="confusion-strip reveal delay-2" id="confusionStrip">
-<button class="" data-desc="El OCR elimina un carácter que sí está presente en la referencia." data-hyp="csa" data-kind="Omisión" data-ref="casa"><em>OMISIÓN</em><span>casa</span><i>→</i><span>csa</span><small>falta un carácter</small></button>
-<button class="" data-desc="El OCR añade un carácter que no aparece en la referencia." data-hyp="casaa" data-kind="Inserción" data-ref="casa"><em>INSERCIÓN</em><span>casa</span><i>→</i><span>casaa</span><small>aparece un carácter extra</small></button>
-<button class="" data-desc="El OCR reemplaza un carácter de la referencia por otro." data-hyp="Bogota" data-kind="Sustitución" data-ref="Bogotá"><em>SUSTITUCIÓN</em><span>á</span><i>→</i><span>a</span><small>diacrítico perdido</small></button>
-<button class="active" data-desc="El OCR reemplaza un carácter de la referencia por otro visualmente parecido." data-hyp="fo1io" data-kind="Sustitución" data-ref="folio"><em>SUSTITUCIÓN</em><span>l</span><i>→</i><span>1</span><small>similitud visual</small></button>
-<button data-desc="El OCR reemplaza un carácter de la referencia por otro de trazo parecido." data-hyp="misno" data-kind="Sustitución" data-ref="mismo"><em>SUSTITUCIÓN</em><span>m</span><i>→</i><span>n</span><small>trazos parecidos</small></button>
+<button class="" data-desc="El OCR elimina un carácter que sí está presente en la referencia." data-hyp="csa" data-kind="Omisión" data-ref="casa"><em>OMISIÓN</em><span>casa</span><i>→</i><span>csa</span></button>
+<button class="" data-desc="El OCR añade un carácter que no aparece en la referencia." data-hyp="casaa" data-kind="Inserción" data-ref="casa"><em>INSERCIÓN</em><span>casa</span><i>→</i><span>casaa</span></button>
+<button class="" data-desc="El OCR reemplaza un carácter de la referencia por otro." data-hyp="Bogota" data-kind="Sustitución" data-ref="Bogotá"><em>SUSTITUCIÓN</em><span>á</span><i>→</i><span>a</span></button>
+
+
 </div>
-<div class="error-lab reveal delay-3" id="errorLab">
+<details class="source-evidence"><summary>Ejemplo ampliado</summary><div class="error-lab reveal delay-3" id="errorLab">
 <div><span>REFERENCIA MANUAL</span><b id="labRef">folio</b></div>
 <i>→</i>
 <div><span>SALIDA OCR</span><b id="labHyp">fo1io</b></div>
 <p><span class="lab-kicker">OPERACIÓN CONTABILIZADA</span><strong id="labKind">Sustitución</strong><br/><small id="labDesc">El OCR reemplaza un carácter de la referencia por otro visualmente parecido.</small></p>
-</div>
+</div></details>
 </div>
 </section>
 <!-- ENTITIES -->
@@ -4538,8 +4568,6 @@ button:focus-visible,[role=slider]:focus-visible{outline:3px solid var(--terraco
 <div class="entity-bar"><i style="width:95.28%"></i></div>
 <b>95.28%</b>
 </div></div><p class="chart-note">Tasa de preservación en la condición <b>original</b>. </p><p class="entity-denominator-note"><b>Nota metodológica:</b> fechas (n=5) y códigos (n=11) tienen denominadores pequeños; sus diferencias deben interpretarse con cautela.</p></details>
-
-
 </div>
 </div>
 </section>
@@ -4604,11 +4632,11 @@ button:focus-visible,[role=slider]:focus-visible{outline:3px solid var(--terraco
 <div class="icr-intro-copy reveal-left">
 <p class="eyebrow light">Rama ICR · documentos manuscritos</p>
 <h2>Cuando la letra deja de ser regular</h2>
-<p class="lead light-copy">El conjunto manuscrito cambia el problema: cada trazo puede variar entre personas, líneas e incluso dentro de una misma palabra. En estas pruebas, <b>OlmOCR fue el único motor que produjo información utilizable</b>, por eso aquí no hacemos un ranking de motores: caracterizamos a fondo su comportamiento.</p>
+<p class="lead light-copy">30 manuscritos · OlmOCR fue el único motor con salida utilizable.</p>
 <div class="icr-facts">
 <span><b>30</b><small>documentos</small></span>
 <span><b>1</b><small>motor analizado</small></span>
-<span><b>30</b><small>salidas ICR</small></span>
+
 </div>
 </div>
 <div aria-hidden="true" class="icr-paper-stage reveal-right">
@@ -4624,28 +4652,29 @@ button:focus-visible,[role=slider]:focus-visible{outline:3px solid var(--terraco
 <div class="section-inner">
 <header class="section-head reveal">
 <p class="eyebrow">ICR · primera capa</p>
-<h2>En manuscritos, el CER mediano es 9,2 %</h2>
-<p>En los 30 documentos manuscritos, OlmOCR presenta una mediana de <b>9,2 % CER</b> y <b>21,7 % WER</b>. En el reporte, la mediana se acompaña del rango intercuartílico para mostrar la dispersión central.</p>
-</header>
-<div class="report-figure-card reveal delay-1 metric-report-card">
+<h2>Manuscritos: el error aumenta</h2>
+
+</header><figure class="projector-chart"><figcaption>OlmOCR · mediana en 30 manuscritos</figcaption><div class="projection-row"><span>CER</span><div class="projection-track"><i style="width:9.2%"></i></div><b>9,2 %</b></div><div class="projection-row"><span>WER</span><div class="projection-track"><i style="width:21.7%"></i></div><b>21,7 %</b></div><div class="projection-axis">0 % <span>Error por carácter / por palabra</span> 100 %</div></figure>
+
+
+<details class="source-evidence"><summary>Respaldo metodológico</summary><div class="report-figure-card reveal delay-1 metric-report-card">
 <img alt="Figura del reporte ICR con la mediana y el rango intercuartílico de CER y WER para OlmOCR" decoding="async" loading="lazy" src="https://ocr-icr-documentos.vercel.app/assets/image-21-79629c74f075.png"/>
-</div>
-<div class="report-stat-strip reveal delay-2">
+</div><div class="report-stat-strip reveal delay-2">
 <div><small>CER mediano</small><b>9,2 %</b></div>
 <div><small>WER mediano</small><b>21,7 %</b></div>
 <div><small>CER global</small><b>9,88 %</b></div>
-</div>
-</div>
+</div></details></div>
 </section>
 <!-- ICR ERRORS -->
 <section class="chapter icr-errors-section report-figure-section paper-section is-visible" data-chapter="13" data-study="icr" id="icr-errors">
 <div class="section-inner">
 <header class="section-head reveal">
 <p class="eyebrow">ICR · anatomía del error</p>
-<h2>En manuscritos, OlmOCR sustituye más de lo que omite o inserta</h2>
-<p>El reporte registra <b>2.955 operaciones de edición</b>: 54,3 % sustituciones, 26,2 % omisiones y 19,5 % inserciones. La segunda lectura baja al carácter concreto.</p>
-</header>
-<div class="icr-report-errors-grid">
+<h2>Más de la mitad de los errores son sustituciones</h2>
+
+</header><figure class="projector-chart"><figcaption>Composición de 2.955 errores · OlmOCR</figcaption><div class="projection-row focus-row"><span>Sustitución</span><div class="projection-track"><i style="width:54.31%"></i></div><b>54,3 %</b></div><div class="projection-row"><span>Omisión</span><div class="projection-track"><i style="width:26.23%"></i></div><b>26,2 %</b></div><div class="projection-row"><span>Inserción</span><div class="projection-track"><i style="width:19.46%"></i></div><b>19,5 %</b></div><div class="projection-axis">0 % <span>Proporción del total de errores</span> 100 %</div><div class="projection-example">i → í <span>77 sustituciones</span></div></figure>
+
+<details class="source-evidence"><summary>Respaldo metodológico</summary><div class="icr-report-errors-grid">
 <article class="report-figure-card compact reveal-left">
 <div class="figure-kicker">Composición del error</div>
 <img alt="Figura del reporte ICR con la composición porcentual de sustituciones, omisiones e inserciones de OlmOCR" decoding="async" loading="lazy" src="https://ocr-icr-documentos.vercel.app/assets/image-22-d17e8b56faed.png"/>
@@ -4664,36 +4693,36 @@ button:focus-visible,[role=slider]:focus-visible{outline:3px solid var(--terraco
 </div>
 <div class="sub-bars-legend"><span><i></i>Confusión entre letras</span><span><i class="accent"></i>Tildes y diacríticos</span></div>
 </article>
-</div>
-</div>
+</div></details></div>
 </section>
 <!-- ICR ENTITIES -->
 <section class="chapter icr-entities-section report-figure-section is-visible" data-chapter="14" data-study="icr" id="icr-entities">
 <div class="section-inner">
 <header class="section-head reveal">
-<p class="eyebrow">La preservación se evaluó buscando, en la salida de OlmOCR, las entidades presentes en la referencia. Aquí importa el porcentaje, pero también el denominador: no es lo mismo perder 1 de 3 que 20 de 30.</p>
-<h2>El manuscrito no pierde todas las entidades por igual</h2>
-<p>Esta parte del reporte es una matriz de preservación. Cada celda muestra qué proporción de entidades de la referencia aparece correctamente en la salida de OlmOCR.</p>
-</header>
-<div class="report-figure-card entity-report-card reveal delay-1">
+<p class="eyebrow">ICR · entidades</p>
+<h2>Nombres: 69,5 % · números: 26,5 %</h2>
+
+</header><figure class="projector-chart"><figcaption>Entidades preservadas · OlmOCR</figcaption><div class="projection-row"><span>Nombres</span><div class="projection-track"><i style="width:69.5%"></i></div><b>69,5 %</b></div><div class="projection-row"><span>Códigos</span><div class="projection-track"><i style="width:57.1%"></i></div><b>57,1 %</b></div><div class="projection-row"><span>Fechas</span><div class="projection-track"><i style="width:56.8%"></i></div><b>56,8 %</b></div><div class="projection-row focus-row"><span>Números</span><div class="projection-track"><i style="width:26.5%"></i></div><b>26,5 %</b></div><div class="projection-axis">0 % <span>Proporción preservada por categoría</span> 100 %</div><p class="projection-note">Números: 9 de 34 preservados; 22 de los 34 eran ordinales.</p></figure>
+
+
+<details class="source-evidence"><summary>Respaldo metodológico</summary><div class="report-figure-card entity-report-card reveal delay-1">
 <img alt="Figura del reporte ICR con preservación de fechas, números, nombres propios y códigos administrativos" decoding="async" loading="lazy" src="https://ocr-icr-documentos.vercel.app/assets/image-23-bba47b4b2db8.png"/>
-</div>
-<div class="entity-report-notes reveal delay-2">
+</div><div class="entity-report-notes reveal delay-2">
 <div><b>Mejor preservación</b><span>Nombres propios · 69,5 % · 169/243.</span></div>
 <div><b>Mayor pérdida</b><span>Números · 26,5 % · 9/34.</span></div>
 <div><b>Contexto de números</b><span>22 de 34 eran ordinales como “2ª”; si se excluyen, la preservación numérica subiría a 66,7 %.</span></div>
-</div>
-</div>
+</div></details></div>
 </section>
 <!-- ICR STABILITY -->
 <section class="chapter icr-stability-polished is-visible" data-chapter="15" data-study="icr" id="icr-stability">
 <div class="section-inner">
 <header class="section-head reveal">
 <p class="eyebrow">ICR · estabilidad entre manuscritos</p>
-<h2>Un resultado típico no describe todos los manuscritos</h2>
-<p>La distribución por documento muestra una variabilidad marcada en el conjunto manuscrito. Los <b>box plots</b> resumen la mediana, el rango intercuartílico y los casos extremos de CER y WER.</p>
-</header>
-<div class="stability-grid reveal delay-1">
+<h2>El error típico oculta casos difíciles</h2>
+
+</header><figure class="projector-chart"><figcaption>OlmOCR · mediana y máximo · escala común 0–50 %</figcaption><div class="paired-row"><span>CER</span><div><div class="paired-track"><i style="width:18.4%"></i><b>9,2 %</b><span>Mediana</span></div><div class="paired-track maximum"><i style="width:36.2%"></i><b>18,1 %</b><span>Máximo · Doc_14</span></div></div></div><div class="paired-row"><span>WER</span><div><div class="paired-track"><i style="width:43.4%"></i><b>21,7 %</b><span>Mediana</span></div><div class="paired-track maximum"><i style="width:83.2%"></i><b>41,6 %</b><span>Máximo · Doc_16</span></div></div></div></figure>
+
+<details class="source-evidence"><summary>Respaldo metodológico</summary><div class="stability-grid reveal delay-1">
 <div class="figure-shell">
 <img alt="Box plots del reporte ICR con la distribución de CER y WER para los 30 documentos manuscritos" decoding="async" loading="lazy" src="https://ocr-icr-documentos.vercel.app/assets/image-24-07aaaa1af337.png"/>
 </div>
@@ -4717,8 +4746,7 @@ button:focus-visible,[role=slider]:focus-visible{outline:3px solid var(--terraco
 </div>
 </div>
 </div>
-</div>
-</div>
+</div></details></div>
 </section>
 <!-- SYNTHESIS -->
 <section class="chapter cross-polished is-visible expo-dense" data-chapter="16" data-study="cross" id="cross-intro">
