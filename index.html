@@ -3371,6 +3371,45 @@ body.motion-paused #archive-bridge .archive-tag{animation:none!important}
 @media(max-width:1200px){#metrics.metrics-academic .academic-chart-toolbar{align-items:start;flex-direction:column}#metrics.metrics-academic .academic-toolbar-note{text-align:left;max-width:none}}
 @media(max-width:1050px){#metrics.metrics-academic .academic-metric-header,#metrics.metrics-academic .metric-axis-row,#metrics.metrics-academic .academic-metric-row{grid-template-columns:90px minmax(240px,1fr) 88px 75px 92px;gap:9px}#metrics.metrics-academic .academic-chart-foot{grid-template-columns:1fr}}
 @media(max-width:760px){#metrics.metrics-academic .academic-definitions{grid-template-columns:1fr}#metrics.metrics-academic .academic-metric-header,#metrics.metrics-academic .metric-axis-row{display:none}#metrics.metrics-academic .academic-metric-row{grid-template-columns:80px 1fr 64px}.academic-metric-row .academic-number:nth-of-type(2),.academic-metric-row .academic-number:nth-of-type(3){display:none}#metrics.metrics-academic .academic-sample-note{text-align:left}}
+/* Fifth research stage: scoped to the existing workflow slide. */
+#build .build-v2-flow{grid-template-columns:minmax(0,1fr) 22px minmax(0,1fr) 22px minmax(0,1fr) 22px minmax(0,1fr) 22px minmax(0,1fr);align-items:stretch}
+#build .v2-card{min-width:0;min-height:390px;padding:12px}
+#build .v2-media{flex-shrink:0;height:300px}
+#build .v2-copy{padding:14px 2px 0}
+#build .v2-copy h3{font-size:clamp(23px,1.8vw,29px);overflow-wrap:anywhere}
+#build .v2-arrow{align-self:center}
+#build .v2-recognition{grid-template-columns:1fr;grid-template-rows:70px 1fr;gap:6px;padding:8px}
+#build .v2-rec-right{padding:8px;gap:4px;min-width:0}
+#build .v2-rec-kicker{width:auto}
+#build .v2-evaluation{padding:8px;gap:6px}
+#build .v2-eval-cols{grid-template-columns:1fr;gap:6px}
+#build .v2-eval-sheet{min-height:0;padding:7px}
+#build .v2-eval-sheet span{margin-bottom:4px}
+#build .v2-eval-sheet p{font-size:9.5px;line-height:1.25}
+#build .v2-metrics-strip{gap:5px}
+#build .v2-metrics-strip span{padding:6px}
+#build .v2-eval-ok{padding:7px;font-size:10px}
+#build .v2-r-chart{margin:0;padding:32px 12px 14px;display:flex;flex-direction:column;justify-content:center;gap:12px}
+#build .v2-r-chart figcaption{font-family:var(--serif);font-size:17px;line-height:1.15;color:var(--ink)}
+#build .v2-r-chart figcaption small{display:block;margin-top:5px;font-family:var(--sans);font-size:11px;color:var(--muted)}
+#build .v2-r-row{font-size:12px;color:var(--muted)}
+#build .v2-r-row > div:first-child{display:flex;justify-content:space-between;gap:4px;margin-bottom:5px}
+#build .v2-r-row b{color:var(--ink);font-variant-numeric:tabular-nums}
+#build .v2-r-track{height:6px;background:var(--paper-2);border-radius:3px;overflow:hidden}
+#build .v2-r-track i{display:block;height:100%;background:var(--terracotta)}
+#build .v2-r-row:nth-of-type(2) i{background:var(--olive)}
+#build .v2-r-row:nth-of-type(3) i{background:var(--sand)}
+#build .v2-r-libraries{margin:14px 2px 0;color:var(--muted);font-size:11px;line-height:1.5}
+@media(max-width:1160px){
+  #build .build-v2-flow{grid-template-columns:1fr;gap:12px}
+  #build .v2-card{min-height:0}
+  #build .v2-copy h3{font-size:27px}
+  #build .v2-arrow{align-self:auto;transform:rotate(90deg)}
+  #build .v2-recognition{grid-template-columns:1fr 1fr;grid-template-rows:1fr}
+  #build .v2-eval-cols{grid-template-columns:1fr 1fr}
+  #build .v2-eval-sheet p{display:block}
+}
+
 </style>
 <style id="icr-v2-style">
 :root{--wine:#8f3f32;--rust:#a8553d;--olive:#6e7356;--gold:#c89e63;--paper2:#f5efe4;--ink2:#2e2925;--muted2:#736b61}
@@ -4318,6 +4357,22 @@ a{text-decoration:none!important}
 <h3>Evaluación</h3>
 <p>Texto + métricas</p>
 </div>
+</article>
+<div aria-hidden="true" class="v2-arrow">→</div>
+<article class="v2-card v2-card-r">
+<span class="v2-num">05</span>
+<figure class="v2-media v2-r-chart" aria-label="Composición de 2.955 errores ICR de OlmOCR: sustituciones 54,3 %, omisiones 26,2 %, inserciones 19,5 %.">
+<figcaption>Composición del error<small>ICR · OlmOCR · 2.955 errores</small></figcaption>
+<div class="v2-r-row"><div><span>Sustituciones</span><b>54,3 %</b></div><div class="v2-r-track" aria-hidden="true"><i style="width:54.31%"></i></div></div>
+<div class="v2-r-row"><div><span>Omisiones</span><b>26,2 %</b></div><div class="v2-r-track" aria-hidden="true"><i style="width:26.23%"></i></div></div>
+<div class="v2-r-row"><div><span>Inserciones</span><b>19,5 %</b></div><div class="v2-r-track" aria-hidden="true"><i style="width:19.46%"></i></div></div>
+</figure>
+<div class="v2-copy">
+<small>Análisis</small>
+<h3>Análisis en R</h3>
+<p>Errores · Entidades · Estabilidad</p>
+</div>
+<p class="v2-r-libraries">quanteda · tidytext · stringdist · ggplot2</p>
 </article>
 </div>
 <div class="build-v2-footer">
